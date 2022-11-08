@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 const PORT = 3003;
 
-
+app.get('/', (request, response) => {
+    response.send(`<h2>99 Bottles of beer on the wall</h2>`)
+})
 
 
 app.get('/magic/:question', (request, response) => {
